@@ -1,0 +1,491 @@
+
+/* chapter new */
+
+*{
+  margin: 0;
+  padding:0 ;
+  box-sizing: border-box;
+}
+/* i didnt gave the height of first div so another div was not lining accordingly */
+
+.container1grid1 {
+  z-index: 1;
+  position: relative;
+  width: 80vw;
+  max-height: 2200px;
+  display: grid;
+margin-top: -55px;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+}
+.container1grid1Card1 {
+  background: rgb(13, 11, 33);
+}
+.big_text {
+  margin-left: 80px;
+  margin-top: 100px;
+  color: white;
+  font-size: 72px;
+  font-weight: bolder;
+}
+.halfpiece{
+  background: rgb(13,11,33);
+}
+.small_paragraph {
+  margin-left: 80px;
+  width: 85%;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  color: white;
+}
+.input_email {
+  margin-left: 80px;
+
+  margin-top: 40px;
+}
+.inputboxwithgreyborder {
+  width: 90%;
+  height: 75px;
+  border: 1px solid grey;
+  background: transparent;
+  outline: none;
+  border-radius: 12px;
+  color: white;
+  display: grid;
+  justify-content: left;
+}
+.input_tag {
+  font-size: 30px;
+  height: 100%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+input {
+  caret-color: rgb(197, 5, 246);
+  caret-color: rgb(197, 5, 246);
+  caret-color: rgb(197, 5, 246);
+  caret-color: rgb(197, 5, 246);
+  font-size: 2vw;
+  font-weight: lighter;
+  font-family: "Raleway", sans-serif;
+}
+::placeholder {
+  font-size: 20px;
+  color: white;
+}
+.input_email button {
+  position: relative;
+  left: calc(59.5%);
+  bottom: 71px;
+  border: none;
+  outline: none;
+  width: 30%;
+  height: 65px;
+  background: #ff003d;
+  outline: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.1ms ease-in-out;
+}
+
+.input_email button:hover {
+  background: black;
+}
+button:active {
+  background: rgb(197, 5, 246) !important;
+}
+.container1grid1Card2 {
+  width: 100%;
+  /* making image right in respect to its parent container */
+  display: grid;
+
+  justify-items: right;
+  height: 100%;
+}
+/* since the image was big by default so, there was a horizontal scrolling in mobile device view */
+.bmobimg {
+  margin-top: -15px;
+  width: 650px;
+  height: 650px;
+}
+
+.second_section {
+  margin-top: 20px;
+  height: 220px;
+  background: rgb(13, 11, 33);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.icon1box,.icon2box,.icon3box{
+  padding-bottom:15px ;
+}
+/* third section css */
+.third_section {
+  margin-top: 20px;
+  background: #333241;
+  max-height: 2200px;
+
+  width: 100vw;
+}
+.thirdsectionimagetag {
+  height: 100%;
+  width: 100%;
+}
+
+/* fourth section css */
+.fourth_section {
+  margin-top: 100px;
+  width: 100vw;
+  height: 860px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+}
+.fourth_section_card1 {
+  width: 100%;
+  height: 100%;
+
+}
+.hrline {
+  color: transparent;
+  position: relative;
+  top: 160px;
+  right: 100px;
+  border: 5px solid yellow;
+  border-radius: 30px;
+  height: 670px;
+  width: 520px;
+}
+
+
+.pinkcircle {
+  margin-left: 0%;
+  margin-top: 27%;
+  border-radius: 60%;
+  height: 370px;
+  width: 370px;
+  background: rgb(255, 0, 61);
+
+}
+
+.fourthsectionimage{
+left: 250px;
+  position: relative;
+top: -480px;
+height: 570px;
+width: 350px;
+}
+
+
+
+
+
+.fourth_section_small_btn{
+ margin-top: 270px;
+  display: flex;
+   justify-content: center;
+  place-items: center;
+border-radius: 10px;
+background: rgb(73,11,46);
+color: #FF003D;
+width: 120px;
+height:40px ;
+font-weight: bolder;
+text-align:center;
+}
+
+.fourth_section_big_txt{
+  padding: 0;
+  margin-top: 5px;
+  color: white;
+  font-size: 3em;
+}
+
+.first_li,.second_li,.third_li{
+  margin-left: -40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  width: 90%;
+  list-style: none;
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+  border-bottom: 1px solid wheat;
+
+}
+
+
+
+
+
+
+.spantag{
+  margin-left: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background: #512431;
+  border-radius: 50%;
+  color: #ff003d;
+  font-family: 'Gilroy-Bold', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
+}
+
+
+
+
+
+
+.fifth_section{
+  margin-top: -300px;
+
+  height: 760px;
+  width: 100vw;
+ color: white;
+display: grid;
+place-items: center;
+grid-template-rows:100% ;
+grid-template-columns: 50% 50%;
+}
+.infosection{
+
+  width: 220px;
+  text-align:left!important;
+}
+
+.fifth_section_card1_big_txt{
+  position: relative;
+  color: white;
+  text-align:center;
+  position: relative;
+   font-size: 50px;
+font-weight: 600;
+margin-top: 200px;
+}
+.paragraphtag{
+  position: relative;
+
+  color: white;
+
+  text-align:center;
+  font-size: 15px;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+
+.fifth_section img{
+  margin-top: 190px;
+  height: 546px;
+  width: 606px;
+}
+
+
+
+.sixth_section{
+  display: grid;
+  place-items: center;
+  height: 695px;
+  width: 100vw;
+ display: grid;
+ grid-template-rows: 100%;
+ grid-template-columns: 50% 50%;
+
+}
+
+.sixth_section_card1{
+  display: flex;
+  justify-content: center;
+}
+.sixthimagecls{
+  margin-top: 80px;
+  width: 610px;
+  height: 546px;
+}
+
+
+/* seventh section css */
+
+
+.seventh_section{
+  margin-top: 60px;
+  height: 60vh;
+  width: 100vw;
+display: flex;
+justify-items: center;
+justify-content: center;
+
+}
+.seventh_section_inner_div{
+ border-radius: 50px;
+  display: grid;
+background:rgb(255,0,61);
+  height: 90%;
+  grid-template-rows:100% ;
+  grid-template-columns:50% 50% ;
+}
+
+.card1seventh{
+height: 100%;
+}
+
+.card2seventh{
+  height: 100%;
+}
+
+
+@media only screen and (min-width: 1px)  and (max-width: 900px) {
+ .halfpiece{
+   background: black;
+ }
+  .seventh_section_inner_div{
+  background: transparent;
+
+  }
+.bmobimg{
+  display: none;
+}
+
+.seventh_section_inner_div{
+  grid-template-rows:50% 50% ;
+  grid-template-columns:100%  ;
+}
+.lstimgcls{
+  position: relative;
+  margin-top: 650px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fourth_section{
+  grid-template-rows:50% 50% !important;
+  grid-template-columns: 100%!important;
+}
+.fourthsectionimage{
+  display: none;
+}
+.fifth_section{
+  grid-template-rows:50% 50% ;
+  grid-template-columns:100% ;
+}
+.fourth_section_card1{
+width: 90vw;
+
+}
+
+.fifth_section_card1_big_txt{
+  position: relative;
+  left: 10px;
+}
+.fifthimgcls{
+  margin-left: 50%;
+  width: 50vw !important;
+  left: 50%;
+  margin-top:410px!important;
+  transform:translateX(-50%);
+}
+.sixth_section{
+  grid-template-rows:50% 50% ;
+  grid-template-columns: 100%;
+}
+.sixthimagecls{
+  position: relative;
+  width: 50vw;
+  left: 50%;
+  transform:translateX(-50%);
+}
+.thirdsectionimagetag{
+  display: none;
+}
+.second_section{
+  background: black;
+}
+.container1grid1Card1{
+  background: black;
+}
+.big_text{
+  font-size: 40px;
+}
+.inputboxwithgreyborder{
+  width: 70vw;
+}
+.clsbtnget{
+  width: 50vw!important;
+  margin-top: 100px;
+}
+.fourth_section_card2{
+  position: relative;
+  margin-top: 240px;
+}
+.fifth_section{
+  position: relative;
+  margin-top: 240px;
+
+
+}
+.infosection{
+  margin-top: 1800px;
+}
+.sixth_section{
+  margin-top:700px ;
+}
+
+.clsbtnget2{
+  margin-top:90px ;
+  height: 40px!important;
+  width: 120px!important;
+  margin-left: -10%;
+}
+.sixth_section_card2{
+  padding-bottom:40px;
+}
+.hrline{
+  display: none;
+}
+.fourth_section_card1{
+  display: none!important;
+}
+.fourth_section{
+  display: none;
+}
+.fifth_section{
+  margin-top: -401px;
+}
+
+.lstimgcls{
+  position: relative;
+  top: 470px;
+}
+
+.lstimgcls{
+  position: relative;
+  margin-top: 650px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.card1seventh{
+ width: 80vw;
+  position: relative;
+left: -10px!important;
+}
+
+}
+

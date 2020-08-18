@@ -1,0 +1,439 @@
+:root {
+  --resumedocumentbackgroundcolor: white;
+}
+::selection {
+  background: rgb(128, 0, 128);
+  color: white;
+}
+
+.maincontainerofresume {
+  color: black;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  height: 1100px;
+}
+
+.portfolio_container {
+  height: 960px;
+  background: var(--resumedocumentbackgroundcolor);
+  border: 4px solid var(--resumedocumentbackgroundcolor);
+  box-shadow: 0px 0px 11px 0.2px white;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 70%;
+  display: grid;
+  grid-template-rows: 30% auto;
+  grid-template-columns: 100%;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+.portfolio_container:hover {
+  transform: scale(1.05);
+}
+
+.innerresumecontainerwith2column {
+  background: transparent;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+}
+.resumecolumndiv1 {
+  background: transparent;
+}
+.resumecolumndiv2 {
+  background-color: transparent;
+}
+.resumeheaderdiv {
+  width: 100%;
+  height: 100%;
+  color: black;
+  background: transparent;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 65% 35%;
+}
+.resumeheader1 {
+  border-bottom: 3px solid rgb(128, 0, 128);
+  margin-top: 30px;
+  background: transparent;
+}
+
+.resumeheader2 {
+  border-bottom: 3px solid rgb(128, 0, 128);
+
+  background: transparent;
+}
+
+.nameonresume {
+  font-weight: 500;
+  font-size: 40px;
+  margin-left: 10%;
+}
+
+.nameonresume::after {
+  margin-left: 10%;
+  height: 0px;
+  display: block;
+  font-size: 15px;
+  content: "Full-Stack Web Developer";
+  font-weight: bold;
+  color: purple;
+}
+.resumetopleftpara {
+  font-family: "Actor", sans-serif;
+
+  position: relative;
+  bottom: 30px;
+  margin-left: 10%;
+}
+
+.resumeheader2 {
+  display: flex;
+}
+
+.descriptionlogocls {
+  font-family: "Actor", sans-serif;
+
+  margin-top: 15px;
+  line-height: 45px;
+  width: 90%;
+  height: 90%;
+  text-align: right;
+}
+
+.logoofresume {
+  margin-left: 10px;
+  margin-top: 25px;
+  display: block;
+  height: 20px;
+  display: flex;
+}
+
+.alllogodiv {
+  width: 30px;
+  height: 100%;
+}
+.lineresumediv {
+  position: absolute;
+  height: 2.9px;
+  width: 48px;
+  background: rgb(128, 0, 128);
+  transform: rotate(90deg);
+  margin-left: -21px;
+  margin-top: 90px;
+}
+
+.workexptxtcls {
+  position: relative;
+  font-size: 20px;
+  left: 13%;
+  font-weight: bolder;
+}
+.resumeworkexperiencepara {
+  font-family: "Actor", sans-serif;
+  font-size: 17px;
+  position: relative;
+  margin-left: 13%;
+  font-weight: 800;
+  margin-top: 5px;
+  color: rgb(128, 0, 128);
+}
+
+.resumeworkexperiencedatepara {
+  margin-top: -10px;
+  font-family: "Actor", sans-serif;
+  font-size: 15px;
+  position: relative;
+  margin-left: 13%;
+  font-weight: 800;
+  color: black;
+}
+.ulpointofworkexperience {
+  list-style: none;
+}
+.ulpointofworkexperience li {
+  margin-top: 10px;
+}
+.ulpointofworkexperience li::before {
+  content: "\2022";
+  color: rgb(128, 0, 128);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media only screen and (min-width: 560px) and (max-width: 1090px) {
+  .maincontainerofresume {
+    height: 3000px;
+  }
+
+  .portfolio_container {
+  height: 1900px;
+  
+  }
+
+  .resumeheaderdiv {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+
+  }
+
+
+  .descriptionlogocls {
+    font-family: "Actor", sans-serif;
+  
+    margin-top: 15px;
+    line-height: 45px;
+    width: 62%;
+    height: 90%;
+    text-align: right;
+  }
+
+
+
+  .innerresumecontainerwith2column {
+    background: transparent;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+  }
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 429px) and (max-width: 560px) {
+  .maincontainerofresume {
+    height: 2800px;
+  }
+
+  .portfolio_container {
+  height: 2500px;
+  
+  }
+
+  .resumeheaderdiv {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+
+  }
+
+
+  .descriptionlogocls {
+    font-family: "Actor", sans-serif;
+  
+    margin-top: 15px;
+    line-height: 45px;
+    width: 62%;
+    height: 90%;
+    text-align: right;
+  }
+
+
+
+  .innerresumecontainerwith2column {
+    background: transparent;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+  }
+  .portfolio_container{
+    grid-template-rows: 35% auto;
+    grid-template-columns: 100%;
+   
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: 1px) and (max-width: 428px) {
+  .maincontainerofresume {
+    height: 3000px;
+  }
+
+  .portfolio_container {
+  height: 2800px;
+  
+  }
+
+  .resumeheaderdiv {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+
+  }
+
+
+  .descriptionlogocls {
+    font-family: "Actor", sans-serif;
+  
+    margin-top: 15px;
+    line-height: 45px;
+    width: 62%;
+    height: 90%;
+    text-align: right;
+  }
+
+
+
+  .innerresumecontainerwith2column {
+    background: transparent;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+  }
+   .portfolio_container{
+    grid-template-rows: 35% auto;
+    grid-template-columns: 100%;
+   
+   }
+
+
+}
+
+
+
+@media only screen and (min-width: 431px) and (max-width: 560px) {
+  .maincontainerofresume {
+    height: 2800px;
+  }
+
+  .portfolio_container {
+  height: 2500px;
+  
+  }
+
+  .resumeheaderdiv {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+
+  }
+
+
+  .descriptionlogocls {
+    font-family: "Actor", sans-serif;
+  
+    margin-top: 15px;
+    line-height: 45px;
+    width: 62%;
+    height: 90%;
+    text-align: right;
+  }
+
+
+
+  .innerresumecontainerwith2column {
+    background: transparent;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+  }
+  .portfolio_container{
+    grid-template-rows: 35% auto;
+    grid-template-columns: 100%;
+   
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: 361px) and (max-width: 430px) {
+  .maincontainerofresume {
+    height: 3000px;
+  }
+
+  .portfolio_container {
+  height: 3000px;
+  
+  }
+
+  .resumeheaderdiv {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+
+  }
+
+
+  .descriptionlogocls {
+    font-family: "Actor", sans-serif;
+  
+    margin-top: 15px;
+    line-height: 45px;
+    width: 62%;
+    height: 90%;
+    text-align: right;
+  }
+
+
+
+  .innerresumecontainerwith2column {
+    background: transparent;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+  }
+   .portfolio_container{
+    grid-template-rows: 35% auto;
+    grid-template-columns: 100%;
+   
+   }
+
+
+}
+
+
+@media only screen and (min-width: 1px) and (max-width: 361px) {
+  .maincontainerofresume {
+    height: 3300px;
+  }
+
+  .portfolio_container {
+  height: 3200px;
+  
+  }
+
+  .resumeheaderdiv {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+
+  }
+
+
+  .descriptionlogocls {
+    font-family: "Actor", sans-serif;
+  
+    margin-top: 15px;
+    line-height: 45px;
+    width: 62%;
+    height: 90%;
+    text-align: right;
+  }
+
+
+
+  .innerresumecontainerwith2column {
+    background: transparent;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+  }
+   .portfolio_container{
+    grid-template-rows: 35% auto;
+    grid-template-columns: 100%;
+   
+   }
+
+
+}
+

@@ -1,0 +1,187 @@
+import React from "react";
+
+import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
+import "./Toolbar.css";
+
+import Home from "../../pages/Home";
+import Portfolio from "../../pages/Portfolio";
+import Resume from "../../pages/Resume";
+import Skills from "../../pages/Skills";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+
+
+
+
+const toolbar = (props) => (
+  
+  
+  <Router>
+    <header className="toolbar">
+      <nav className="toolbar__navigation">
+        <div className="toolbar__toggle-button">
+          <DrawerToggleButton click={props.drawerClickHandler} />
+        </div>
+        <div className="spacer" />
+        <div className="toolbar_navigation-items">
+          <ul>
+            <li>
+              <Link to="/" id='homemenu' onMouseEnter={()=>one()} className='toolbaranchorcls' >Home</Link>
+            </li>
+            <li>
+              <Link to="/portfolio" id='portfoliomenu'  onMouseEnter={()=>two()} onMouseLeave={()=>twoii()} className='toolbaranchorcls'>Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/resume" id='resumemenu'  onMouseEnter={()=>three()} onMouseLeave={()=>threeii()} className='toolbaranchorcls'>Resume</Link>
+            </li>
+            <li>
+              <Link to="/skills" id='skillsmenu'  onMouseEnter={()=>four()} onMouseLeave={()=>fourii()} className='toolbaranchorcls'>Skills</Link>
+              </li>
+              <div id='line'></div>
+          </ul>
+          <button  className='mode'  onClick={()=>mode()}><div className='modecircle' ></div></button>
+        </div>
+      </nav>
+    </header>
+    <Route exact path="/" component={Home} />
+    <Route path="/portfolio" component={Portfolio} />
+    <Route path="/resume" component={Resume} />
+    <Route path="/skills" component={Skills} />
+  </Router>
+);
+
+export default toolbar;
+
+
+function one(){
+  document.getElementById('line').style.display='block'
+}
+
+
+function two(){
+  document.getElementById('line').style.width='85px'
+ 
+  document.getElementById('line').style.transform='translateX(78px)'
+}
+function twoii(){
+  document.getElementById('line').style.transform='translateX(0px)'
+  document.getElementById('line').style.width='73px'
+}
+
+
+
+function three(){
+  document.getElementById('line').style.width='80px'
+ 
+  document.getElementById('line').style.transform='translateX(176px)'
+}
+function threeii(){
+  document.getElementById('line').style.transform='translateX(0px)'
+  document.getElementById('line').style.width='73px'
+}
+
+
+function four(){
+  document.getElementById('line').style.width='67px'
+ 
+  document.getElementById('line').style.transform='translateX(266px)'
+}
+function fourii(){
+  document.getElementById('line').style.transform='translateX(0px)'
+  document.getElementById('line').style.width='73px'
+}
+
+
+var a=1;
+function mode(){
+ 
+ if (a%2===0){
+  //  dark mode
+  document.getElementsByClassName('modecircle')[0].style.background='white'
+  document.getElementsByClassName('mode')[0].style.background='grey'
+
+  document.getElementsByClassName('modecircle')[0].style.transform='translateX(21px)'
+  a+=1
+
+// dark mode divs
+document.getElementsByTagName('body')[0].style.background='black'
+document.getElementsByClassName('h_container_1_card0')[0].style.background='black'
+document.getElementsByClassName('h_container_1_card1')[0].style.background='black'
+document.getElementsByClassName('h_container_1_card2')[0].style.background='black'
+// yellow text in dark mode
+document.getElementsByClassName('txt2home')[0].style.color='yellow'
+  
+   // heavy quotation 
+   document.getElementsByClassName('txt3home')[0].style.color='white'
+  //  about me text in dark mode
+   document.getElementsByClassName('txt3home')[0].style.color='white'
+//  border of myimage in darkmode
+
+document.getElementsByClassName('imagediv')[0].style.border='1.5px solid white'
+
+
+
+
+// anchor tag in dark mode
+document.getElementsByClassName('toolbaranchorcls')[0].style.color='white'
+document.getElementsByClassName('toolbaranchorcls')[1].style.color='white'
+document.getElementsByClassName('toolbaranchorcls')[2].style.color='white'
+document.getElementsByClassName('toolbaranchorcls')[3].style.color='white'
+// line below anchor tag
+document.getElementById('line').style.background='white'
+
+// hamburger 3 divs background
+document.getElementsByClassName('toggle-button__line')[0].style.background='white'
+document.getElementsByClassName('toggle-button__line')[1].style.background='white'
+document.getElementsByClassName('toggle-button__line')[2].style.background='white'
+
+
+}else{
+  document.getElementsByClassName('mode')[0].style.background='black'
+  document.getElementsByClassName('modecircle')[0].style.background='yellow'
+  
+  document.getElementsByClassName('modecircle')[0].style.transform='translateX(0px)'
+  a+=1
+
+
+
+  // sunny mode divs
+  document.getElementsByTagName('body')[0].style.background='wheat'
+document.getElementsByClassName('h_container_1_card0')[0].style.background='wheat'
+document.getElementsByClassName('h_container_1_card1')[0].style.background='wheat'
+document.getElementsByClassName('h_container_1_card2')[0].style.background='wheat'
+// yellow text in sunny mode
+document.getElementsByClassName('txt2home')[0].style.color='black'
+// anchor tag in sunny mode
+document.getElementsByClassName('toolbaranchorcls')[0].style.color='black'
+document.getElementsByClassName('toolbaranchorcls')[1].style.color='black'
+document.getElementsByClassName('toolbaranchorcls')[2].style.color='black'
+document.getElementsByClassName('toolbaranchorcls')[3].style.color='black'
+// line below anchor tag in toolbar
+document.getElementById('line').style.background='black'
+// hamburger 3 divs background
+document.getElementsByClassName('toggle-button__line')[0].style.background='black'
+document.getElementsByClassName('toggle-button__line')[1].style.background='black'
+document.getElementsByClassName('toggle-button__line')[2].style.background='black'
+
+document.getElementsByClassName('toggle-button__line')[0].style.border='1px solid black'
+document.getElementsByClassName('toggle-button__line')[1].style.border='1px solid black'
+document.getElementsByClassName('toggle-button__line')[2].style.border='1px solid black'
+// side drawer in sunny mode
+  document.getElementsByClassName('side-drawer')[0].style.background='#37474F'
+  // heavy quotation 
+  document.getElementsByClassName('heavyquotaionentity')[0].style.color='black'
+
+  document.getElementsByClassName('txt3home')[0].style.color='black'
+
+//  border of myimage in darkmode
+
+document.getElementsByClassName('imagediv')[0].style.border='1.5px solid black'
+
+
+}
+}
+
+
+
+
