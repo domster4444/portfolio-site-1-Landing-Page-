@@ -26,15 +26,18 @@ const Home = () => {
           AnyVoice is an awesome app that allows you change your voice to
           anyone else’s in the world. App will be released sometime in 2050
         </div>
+        <form>
         <div className="input_email">
           <div className="inputboxwithgreyborder">
-            <input
+           
+          <input type='email'
               placeholder="Enter your email"
               className="input_tag"
             ></input>
           </div>
-          <button className='clsbtnget'>Get notified</button>
+          <button type='submit' className='clsbtnget'>Get notified</button>
         </div>
+        </form>
       </div>
 
       <div className="container1grid1Card2">
