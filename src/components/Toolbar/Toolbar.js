@@ -37,6 +37,8 @@ const toolbar = (props) => (
             <li  className='li'>
               <Link to="/skills" id='skillsmenu'   className='toolbaranchorcls'>Contact</Link>
               </li>
+
+
               <div id='line'></div>
           </ul>
           <button  className='mode'  onClick={()=>mode()}><div className='modecircle' ></div></button>

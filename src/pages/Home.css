@@ -1,3 +1,6 @@
+body{
+  background: rgb(13,11,33);
+}
 .bmobimg{
   background: transparent;
 }
@@ -370,11 +373,13 @@ height: 100%;
   grid-template-rows:50% 50% ;
   grid-template-columns:100%  ;
 }
+
+
 .lstimgcls{
   position: relative;
   margin-top: 650px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 50%!important;
+  transform: translateX(-50%)!important;
 }
 .fourth_section{
   grid-template-rows:50% 50% !important;
@@ -479,8 +484,8 @@ width: 90vw;
 .lstimgcls{
   position: relative;
   margin-top: 650px;
-  left: 20%;
-  transform: translateX(-50%);
+  left: 30%!important;
+  transform: translateX(-50%)!important;
 }
 
 .card1seventh{
@@ -488,6 +493,18 @@ width: 90vw;
   position: relative;
 left: -10px!important;
 }
-
+body{
+  background: black;
 }
 
+}
+@media only screen and (min-width: 1px)  and (max-width: 476px) {
+  .lstimgcls{
+    position: relative;
+    margin-top: 650px;
+    left: 50%!important;
+    transform: translateX(-50%)!important;
+  }
+  
+}
+/* 1-476 */
