@@ -1,4 +1,6 @@
-
+.bmobimg{
+  background: transparent;
+}
 /* chapter new */
 
 *{
@@ -11,7 +13,7 @@
 .container1grid1 {
   z-index: 1;
   position: relative;
-  width: 80vw;
+  width: 100vw;
   max-height: 2200px;
   display: grid;
 margin-top: -55px;

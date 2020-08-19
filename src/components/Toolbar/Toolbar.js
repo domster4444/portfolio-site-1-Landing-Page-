@@ -25,17 +25,17 @@ const toolbar = (props) => (
         <div className="spacer" />
         <div className="toolbar_navigation-items">
           <ul>
-            <li>
-              <Link to="/" id='homemenu' onMouseEnter={()=>one()} className='toolbaranchorcls' >Home</Link>
+            <li className='li'>
+              <Link to="/" id='homemenu'  className='toolbaranchorcls' >Home</Link>
             </li>
-            <li>
-              <Link to="/portfolio" id='portfoliomenu'  onMouseEnter={()=>two()} onMouseLeave={()=>twoii()} className='toolbaranchorcls'>Portfolio</Link>
+            <li  className='li'>
+              <Link to="/portfolio" id='portfoliomenu'  className='toolbaranchorcls'>Services</Link>
             </li>
-            <li>
-              <Link to="/resume" id='resumemenu'  onMouseEnter={()=>three()} onMouseLeave={()=>threeii()} className='toolbaranchorcls'>Resume</Link>
+            <li  className='li'>
+              <Link to="/resume" id='resumemenu'   className='toolbaranchorcls'>Journey</Link>
             </li>
-            <li>
-              <Link to="/skills" id='skillsmenu'  onMouseEnter={()=>four()} onMouseLeave={()=>fourii()} className='toolbaranchorcls'>Skills</Link>
+            <li  className='li'>
+              <Link to="/skills" id='skillsmenu'   className='toolbaranchorcls'>Contact</Link>
               </li>
               <div id='line'></div>
           </ul>
@@ -52,44 +52,6 @@ const toolbar = (props) => (
 
 export default toolbar;
 
-
-function one(){
-  document.getElementById('line').style.display='block'
-}
-
-
-function two(){
-  document.getElementById('line').style.width='85px'
- 
-  document.getElementById('line').style.transform='translateX(78px)'
-}
-function twoii(){
-  document.getElementById('line').style.transform='translateX(0px)'
-  document.getElementById('line').style.width='73px'
-}
-
-
-
-function three(){
-  document.getElementById('line').style.width='80px'
- 
-  document.getElementById('line').style.transform='translateX(176px)'
-}
-function threeii(){
-  document.getElementById('line').style.transform='translateX(0px)'
-  document.getElementById('line').style.width='73px'
-}
-
-
-function four(){
-  document.getElementById('line').style.width='67px'
- 
-  document.getElementById('line').style.transform='translateX(266px)'
-}
-function fourii(){
-  document.getElementById('line').style.transform='translateX(0px)'
-  document.getElementById('line').style.width='73px'
-}
 
 
 var a=1;
