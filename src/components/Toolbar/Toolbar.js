@@ -7,7 +7,7 @@ import "./Toolbar.css";
 // import Portfolio from "../../pages/Portfolio";
 // import Resume from "../../pages/Resume";
 // import Skills from "../../pages/Skills";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 

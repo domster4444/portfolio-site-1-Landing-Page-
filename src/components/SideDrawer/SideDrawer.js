@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SideDrawer.css';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import Home from "../../pages/Home";
 // import Portfolio from "../../pages/Portfolio";
 // import Resume from "../../pages/Resume";
