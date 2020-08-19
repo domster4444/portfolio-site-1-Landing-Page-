@@ -16,6 +16,7 @@ const ncard = (val) => {
    key = {val.id}
    cardimage={val.cardimage}
    cardinfo={val.cardname}
+   cardtopic={val.cardtopic}
  />
  )
  }

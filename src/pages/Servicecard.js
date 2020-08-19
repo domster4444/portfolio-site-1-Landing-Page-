@@ -10,6 +10,7 @@ class card extends Component {
       <div className="maindivofcardcompo">
         <div className="cardbox" >
           <img src={this.props.cardimage} alt="card" />
+          <h1 >{this.props.cardtopic}</h1>
           <h4 className="cardnamecls">{this.props.cardinfo}</h4>
         </div>
       </div>

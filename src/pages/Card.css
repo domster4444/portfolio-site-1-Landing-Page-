@@ -19,9 +19,7 @@ img{
     width: 100%;
     background: transparent;
 }
-
 .cardbox{
-
     cursor: pointer;
     box-shadow: 0px 0px 18px 1px rgb(6,46,97) ;
     overflow: hidden;
