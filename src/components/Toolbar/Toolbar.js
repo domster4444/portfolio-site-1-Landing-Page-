@@ -3,10 +3,10 @@ import React from "react";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import "./Toolbar.css";
 
-import Home from "../../pages/Home";
-import Portfolio from "../../pages/Portfolio";
-import Resume from "../../pages/Resume";
-import Skills from "../../pages/Skills";
+// import Home from "../../pages/Home";
+// import Portfolio from "../../pages/Portfolio";
+// import Resume from "../../pages/Resume";
+// import Skills from "../../pages/Skills";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
@@ -16,7 +16,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const toolbar = (props) => (
   
   
-  <Router>
     <header className="toolbar">
       <nav className="toolbar__navigation">
         <div className="toolbar__toggle-button">
@@ -45,11 +44,7 @@ const toolbar = (props) => (
         </div>
       </nav>
     </header>
-    <Route exact path="/" component={Home} />
-    <Route path="/services" component={Portfolio} />
-    <Route path="/journey" component={Resume} />
-    <Route path="/contact" component={Skills} />
-  </Router>
+ 
 );
 
 export default toolbar;

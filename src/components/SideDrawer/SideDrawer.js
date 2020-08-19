@@ -2,7 +2,11 @@ import React from 'react';
 
 import './SideDrawer.css';
 
-
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// import Home from "../../pages/Home";
+// import Portfolio from "../../pages/Portfolio";
+// import Resume from "../../pages/Resume";
+// import Skills from "../../pages/Skills";
 
 const sideDrawer = props => {
   let drawerClasses = 'side-drawer';
@@ -10,27 +14,27 @@ const sideDrawer = props => {
     drawerClasses = 'side-drawer open';
   }
   return (
-    
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/services">Services</a>
+          <Link to="/services">Services</Link>
         </li>
       
         <li>
-        <a href="/journey">Journey</a>
+        <Link to="/journey">Journey</Link>
       </li>
       <li>
-        <a href="/contact">Contact</a>
+        <Link to="/contact">Contact</Link>
       </li>
       
       
         </ul>
     
         </nav>
+        
   );
 };
 

@@ -5,6 +5,11 @@ import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import './App.css'
 
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
+import Skills from "./pages/Skills";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 
@@ -32,6 +37,8 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
     return (
+   <>
+   <Router>
       <div style={{height: '100%'}}>
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
@@ -41,7 +48,10 @@ class App extends Component {
 
 
 
-
+        <Route exact path="/" component={Home} />
+        <Route path="/services" component={Portfolio} />
+        <Route path="/journey" component={Resume} />
+        <Route path="/contact" component={Skills} />
 
 
 
@@ -54,7 +64,9 @@ class App extends Component {
         </main>
         
       </div>
-    );
+</Router>
+</>
+);
   }
 }
 
