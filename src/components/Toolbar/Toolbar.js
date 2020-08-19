@@ -29,13 +29,13 @@ const toolbar = (props) => (
               <Link to="/" id='homemenu'  className='toolbaranchorcls' >Home</Link>
             </li>
             <li  className='li'>
-              <Link to="/portfolio" id='portfoliomenu'  className='toolbaranchorcls'>Services</Link>
+              <Link to="/services" id='portfoliomenu'  className='toolbaranchorcls'>Services</Link>
             </li>
             <li  className='li'>
-              <Link to="/resume" id='resumemenu'   className='toolbaranchorcls'>Journey</Link>
+              <Link to="/journey" id='resumemenu'   className='toolbaranchorcls'>Journey</Link>
             </li>
             <li  className='li'>
-              <Link to="/skills" id='skillsmenu'   className='toolbaranchorcls'>Contact</Link>
+              <Link to="/contact" id='skillsmenu'   className='toolbaranchorcls'>Contact</Link>
               </li>
 
 
@@ -46,9 +46,9 @@ const toolbar = (props) => (
       </nav>
     </header>
     <Route exact path="/" component={Home} />
-    <Route path="/portfolio" component={Portfolio} />
-    <Route path="/resume" component={Resume} />
-    <Route path="/skills" component={Skills} />
+    <Route path="/services" component={Portfolio} />
+    <Route path="/journey" component={Resume} />
+    <Route path="/contact" component={Skills} />
   </Router>
 );
 

@@ -399,11 +399,13 @@ width: 90vw;
 
 .fifth_section_card1_big_txt{
   position: relative;
+  margin-top: 500px;
   left: 10px;
 }
 .fifthimgcls{
-  margin-left: 50%;
-  width: 50vw !important;
+  transform:scale(1.2)!important;
+  margin-top: 10px;
+  width: 70vw !important;
   left: 50%;
   margin-top:410px!important;
   transform:translateX(-50%);
@@ -413,9 +415,11 @@ width: 90vw;
   grid-template-columns: 100%;
 }
 .sixthimagecls{
-  position: relative;
-  width: 50vw;
+  transform:scale(1.2)!important;
+  margin-top: 10px;
+  width: 70vw !important;
   left: 50%;
+  margin-top:410px!important;
   transform:translateX(-50%);
 }
 .thirdsectionimagetag{
